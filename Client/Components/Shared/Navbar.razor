@@ -1,0 +1,28 @@
+﻿<h3>Navbar</h3>
+
+@code {
+    [Inject] 
+    public NavigationManager NavManager { get; set; }
+
+    private const string kHomePageUriPath = "/";
+    private const string kPostsPageUriPath = "/posts";
+
+    public bool IsPageActive(string uriPath)
+    {
+        // Skip 3 '/' to only check the route relative to the domain, i.e. remove "https://blog.domain-name.com/"
+        var currentUriPath = NavManager.Uri.Split('/').Skip(3);
+        if (uriPath == kHomePageUriPath && currentUriPath.Last().Length == 0)
+        {
+            return true;
+        }
+
+        // uri is passed with a preceding '/' so skip 1 to avoid empty strings
+        var targetPath = uriPath.Split('/').Skip(1);
+        if (targetPath.Any(subPath => !currentUriPath.Contains(subPath)))
+        {
+            return false;
+        }
+
+        return true;
+    }
+}

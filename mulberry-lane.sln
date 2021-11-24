@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mulberry-lane.Server", "Server\mulberry-lane.Server.csproj", "{7D424348-2831-4245-83E5-742E288B9594}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mulberry-lane.Server", "Server\mulberry-lane.Server.csproj", "{7D424348-2831-4245-83E5-742E288B9594}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mulberry-lane.Client", "Client\mulberry-lane.Client.csproj", "{28747E31-0C45-4B91-9E6C-F24D9764CE2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mulberry-lane.Client", "Client\mulberry-lane.Client.csproj", "{28747E31-0C45-4B91-9E6C-F24D9764CE2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mulberry-lane.Shared", "Shared\mulberry-lane.Shared.csproj", "{248D212C-043E-41E5-8970-A4D06AB161DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mulberry-lane.Shared", "Shared\mulberry-lane.Shared.csproj", "{248D212C-043E-41E5-8970-A4D06AB161DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
