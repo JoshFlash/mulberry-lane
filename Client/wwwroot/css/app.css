@@ -39,7 +39,7 @@ a, .btn-link {
 }
 
 .bg-image-dev {
-    background-image: url(..assets/img/publicbackgrounds/bg-image-dev.jpg);
+    background-image: url(../assets/img/public-backgrounds/bg-image-dev.jpeg);
 }
 
 min-vh-90 {
@@ -57,7 +57,7 @@ min-vh-90 {
     }
 
     .bg-image-dev {
-        background-image: url(..assets/img/publicbackgrounds/bg-image.jpg);
+        background-image: url(../assets/img/public-backgrounds/bg-image.jpeg);
     }
 }
 
