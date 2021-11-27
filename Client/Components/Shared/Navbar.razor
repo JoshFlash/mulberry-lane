@@ -1,4 +1,4 @@
-﻿<nav class="navbar nav-item navbar-expand-md d-flex navbar-brand bg-black-80 shadow-no-hover justify-content-between align-items-baseline">
+﻿<nav class="navbar nav-item navbar-expand-md d-flex navbar-brand bg-black-80 justify-content-between align-items-center">
     <a href="/" class="navbar-brand md-f-size-1-5 text-light text-opacity-75 ps-2 m-1 mx-lg-5 fw-bolder">
         Josh Flash &ensp;<span class="text-light text-opacity-75 fw-light"> &diams; &ensp; Game Developer</span>
     </a>
@@ -8,12 +8,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a href="@kHomePageUriPath" class="nav-link text-light text-opacity-75 mx-5 md-and-smaller-my-3 @(IsPageActive(kHomePageUriPath) ? "active" : string.Empty)">
+            <a href="@kHomePageUriPath" class="nav-link text-light text-opacity-75 mx-5 @(IsPageActive(kHomePageUriPath) ? "active" : string.Empty)">
                 Home
             </a>
             </li>
             <li class="nav-item">
-                <a href="@kPostsPageUriPath" class="nav-link text-light text-opacity-75 mx-5 md-and-smaller-my-3 @(IsPageActive(kPostsPageUriPath) ? "active" : string.Empty)">
+                <a href="@kPostsPageUriPath" class="nav-link text-light text-opacity-75 mx-5 @(IsPageActive(kPostsPageUriPath) ? "active" : string.Empty)">
                     Posts
                 </a>
             </li>

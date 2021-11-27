@@ -40,6 +40,7 @@ a, .btn-link {
 
 .bg-image-dev {
     background-image: url(../assets/img/public-backgrounds/bg-image-dev.jpeg);
+    background-repeat: repeat-y;
 }
 
 .min-vh-90 {
@@ -62,6 +63,7 @@ a, .btn-link {
 
     .bg-image-dev {
         background-image: url(../assets/img/public-backgrounds/bg-image.jpeg);
+        background-repeat: repeat-y;
     }
 }
 
