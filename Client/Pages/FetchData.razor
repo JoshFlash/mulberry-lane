@@ -1,5 +1,4 @@
 ﻿@page "/fetchdata"
-@using mulberry_lane.Shared
 @inject HttpClient Http
 
 <PageTitle>Weather forecast</PageTitle>
@@ -8,7 +7,7 @@
 
 <p>This component demonstrates fetching data from the server.</p>
 
-@if (forecasts == null)
+@if (posts == null)
 {
     <p><em>Loading...</em></p>
 }
@@ -24,13 +23,11 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in forecasts)
+            @foreach (var post in posts)
             {
                 <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
+                    <td>@post.Title</td>
+                    <td>@post.Description</td>
                 </tr>
             }
         </tbody>
@@ -38,10 +35,10 @@ else
 }
 
 @code {
-    private WeatherForecast[]? forecasts;
+    private PortfolioPost[]? posts;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        posts = await Http.GetFromJsonAsync<PortfolioPost[]>("Posts");
     }
 }
