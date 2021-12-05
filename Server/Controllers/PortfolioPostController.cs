@@ -1,7 +1,7 @@
 using System.Globalization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace mulberry_lane.Server.Controllers
+namespace Server.Controllers
 {
     [ApiController]
     [Route("[controller]")]
